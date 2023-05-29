@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+:root{
+    /*Colors*/
+    /*primary*/
+    --color1: hsl(179, 62%, 43%);
+    --color2: hsl(71, 73%, 54%);
+    --color5: #4CC0BF;
+    --color6: #FFFFFF;
+    /*Neutral*/
+    --color3: hsl(204, 43%, 93%);
+    --color4: hsl(218, 22%, 67%);
+    
+    /*Font*/
+    --font: 'Karla';
+}
+
+/*Mobile*/
+
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color3);
+    padding: 2em;
+}
+body,
+main,
+.one,
+.two,
+.three,
+.price,
+.btn{
+    display: flex;
+    flex-direction: column;
+}
+.one,
+.two,
+.three{
+    width: 100%;
+}
+main{
+    width: 72%;
+    min-height: 45.1em;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-------ONE------------*/
+
+.one{
+    background-color:var(--color6);
+    padding: 2em 1.5em 2em 1.5em;
+    gap: 1em;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+}
+h1{
+    font-size: 1.1em;
+    color: var(--color1);
+}
+.access{
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.5;
+    font-weight: 100;
+}
+.money{
+    text-align: left;
+    font-size: 0.8em;
+    color: var(--color2);
+}
+
+/*-------TWO------------*/
+
+.two{
+    background-color: var(--color1);
+    padding: 2em 1.5em 2em 1.5em;
+    gap: 1em;
+}
+h3{
+    color: var(--color6);
+}
+.mounth{
+    align-items: start;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.btn{
+    align-items: start;
+    color: var(--color6);
+    gap: 1em;
+}
+.price{
+    gap: 0.625em;
+}
+#strong{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+#per{
+    font-weight: 100;
+    opacity: 0.5;
+}
+h4{
+    font-size: 0.8em;
+    font-weight: 100;
+}
+button{
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: 0.225em;
+    background-color: var(--color2);
+    font-family: var(--font);
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--color6);
+    cursor: pointer;
+    box-shadow: 0.2em 0.2em 0.9em rgb(107, 104, 104);
+}
+
+/*-------THREE------------*/
+
+.three{
+    background-color: var(--color5);
+    padding: 2em 1.5em 2em 1.5em;
+    color: var(--color6);
+    gap: 1em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+}
+h5{
+    font-size: 1em;
+}
+.tutorials{
+    width: 75%;
+    font-weight: 100;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/*Dekstop*/
+
+@media (min-width: 1440px){
+
+    body{
+        height: 100vh;
+        justify-content: center;
+    }
+    main{
+        width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 19.6em);
+        grid-template-rows: repeat(2, 16em);
+    }
+    .one{
+        grid-column: 1 / 3;
+        height: 15.8em;
+        margin: 2.7em 0 0 0;
+        padding: 2.7em 1.2em 0 1.2em;
+    }
+    .two{
+        width: 19.6em;
+        height: 16em;
+        gap: 1.5em;
+        border-bottom-left-radius: 0.5em;
+    }
+    .three{
+        width: 19.6em;
+        height: 16em;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0.5em;
+    }
+    h1, h5{
+        font-size: 1.5em;
+    }
+    h1{
+        padding: 0 0 0 1em;
+    }
+    .access, .money{
+        font-size: 1.1em;
+        padding: 0 0 0 1.2em;
+    } 
+    .tutorials, 
+    #per, 
+    h4{
+        font-size: 1em;
+    }
+    .tutorials,
+     h5{
+        width: 90%;
+        line-height: 1.4;
+        padding: 0 0 0 1.2em;
+    }
+    h3{
+        margin: 0 0 0 1em;
+        font-size: 1.2em;
+    }
+    #strong{
+        font-size: 2em;
+    }
+    .btn{
+        padding: 0 0 0 1.2em;
+        align-content: center;
+        justify-self: center;
+    }
+    button{
+        width: 88%;
+        margin: 0.8em 0 0 1.2em;
+    }
+}       /*thanks for visiting*/
